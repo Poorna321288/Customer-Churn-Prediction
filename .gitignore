@@ -14,15 +14,16 @@ conda/
 .env
 
 # Data & large model files (add your large extensions if needed)
-*.csv
-*.zip
-*.parquet
-*.pkl
-*.h5
-*.joblib
-*.pickle
-data/
-models/
+# Data & large model files (add your large extensions if needed)
+#*.csv
+#*.zip
+#*.parquet
+#*.pkl
+#*.h5
+#*.joblib
+#*.pickle
+#data/
+#models/
 
 # IDE / Editor files
 .vscode/
