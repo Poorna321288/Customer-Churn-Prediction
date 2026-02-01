@@ -1,0 +1,36 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c113dd13-e0f9-4cc2-8955-d4a788e9d7cd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "feature_columns = list(X_train.columns)          \n",
+    "joblib.dump(feature_columns, \"models/feature_columns.joblib\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:churnenv]",
+   "language": "python",
+   "name": "conda-env-churnenv-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

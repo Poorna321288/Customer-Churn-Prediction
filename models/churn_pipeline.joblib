@@ -1,0 +1,44 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "35b55462-a117-4e4d-9a69-7e0657c9b5ad",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pipeline = Pipeline([\n",
+    "    ('scaler',      StandardScaler()),               \n",
+    "    ('classifier',  FixedThresholdClassifier(       \n",
+    "        estimator = xgb.XGBClassifier(...),         \n",
+    "        threshold = 0.30\n",
+    "    ))\n",
+    "])\n",
+    "\n",
+    "pipeline.fit(X_train_sm, y_train_sm)              \n",
+    "joblib.dump(pipeline, \"models/churn_pipeline.joblib\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:churnenv]",
+   "language": "python",
+   "name": "conda-env-churnenv-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
